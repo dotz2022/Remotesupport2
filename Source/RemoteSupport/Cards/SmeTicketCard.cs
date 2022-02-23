@@ -103,7 +103,6 @@ namespace Microsoft.Teams.Apps.RemoteSupport.Cards
                     Text = localizer.GetString("SmeRequestDetailText", this.ticket.RequesterName),
                     Spacing = AdaptiveSpacing.None,
                 },
-                CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestNumberText"), $"#{ticketDetail.RowKey}", localizer),
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestTypeText"), ticketDetail.RequestType, localizer),
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("RequestStatusText"), $"{(TicketState)ticketDetail.TicketStatus}", localizer),
                 CardHelper.GetAdaptiveCardColumnSet(localizer.GetString("TitleDisplayText"), ticketDetail.Title, localizer),
